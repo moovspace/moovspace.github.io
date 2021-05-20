@@ -7,7 +7,7 @@ export class Page extends Component
 {
 	Setup(div)
 	{
-		document.title = 'Js SPA - Show Todo';
+		document.title = 'Js SPA - Client details';
 
 		// Pretty url /todo/{id}
 		let id = this.urlParams()[1]
