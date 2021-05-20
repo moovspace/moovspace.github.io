@@ -11,8 +11,11 @@ export class Page extends Component
 
 		// Pretty url /todo/{id}
 		let id = this.urlParams()[1]
+
 		Store.UserId(id);
+
 		console.log("Todo id: ", id)
+
 		return { 'html': View.Html(div) }
 	}
 }
