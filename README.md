@@ -1,5 +1,5 @@
-# Spa js router
-Single page application routing system in javascript.
+# Spa js app
+Spa js app for github pages.
 
 ### Router
 main.js
