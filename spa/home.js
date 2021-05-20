@@ -1,25 +1,18 @@
-import Component from '/spa/router/component.js'
-import Event from '/spa/router/event.js'
-import View from '/spa/view/home.js'
-import Store from './store.js';
+import Menu from '/spa/view/menu.js'
 
-export class Page extends Component
+export default class HomeView
 {
-	Setup(div)
+	static Home(div)
 	{
-		// Page title
-		document.title = 'Spa javascript router (ES6)';
+		return `<div id="content">
+			<h1> SPA js router </h1>
+			<p> Js SPA router, single page application routing system in javascript. </p>
+			<a href="https://github.com/moovspace/spa-js-router"> Github repository </a>
+		</div>`;
+	}
 
-		// Document events: click, dblclick, change, keydown, contextmenu, auxclick, mouseover ...
-		let e1 = Event.addDocument("#content", (item,index) => { console.log("Clicked! ", item, index); }, "click");
-		let e2 = Event.addDocument("#content", (item,index) => { console.log("Clicked right mouse! ", item, index); }, "auxclick");
-
-		// Window events: hashchange, load, popstate - after local link click
-		let e3 = Event.addWindow(() => {
-			console.log("Page onload event !!!")
-		}, 'load');
-
-		// Page
-		return { 'html': View.Html(div), 'document_events': [e1,e2], 'window_events': [e3] }
+	static Html(div)
+	{
+		return Menu.Html() + this.Home(div);
 	}
 }
