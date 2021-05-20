@@ -7,7 +7,7 @@ export default class HomeView
 		return `<div id="content">
 			<h1> SPA js router </h1>
 			<p> Js SPA router, single page application routing system in javascript. </p>
-			<a href="github.com/moovspace/spa-js-router"> Github repository </a>
+			<a href="https://github.com/moovspace/spa-js-router"> Github repository </a>
 		</div>`;
 	}
 
