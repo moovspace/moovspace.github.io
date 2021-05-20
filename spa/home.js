@@ -8,7 +8,7 @@ export class Page extends Component
 	Setup(div)
 	{
 		// Page title
-		document.title = 'Js SPA Homepage';
+		document.title = 'Js SPA router';
 
 		// Document events: click, dblclick, change, keydown, contextmenu, auxclick, mouseover ...
 		let e1 = Event.addDocument("#content", (item,index) => { console.log("Clicked! ", item, index); }, "click");
